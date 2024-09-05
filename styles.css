@@ -18,15 +18,15 @@ body {
 }
 
 h1 {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-size: 36px;
     color: #2c3e50;
 }
 
 .certification-list {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     gap: 20px;
 }
 
@@ -34,23 +34,11 @@ h1 {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
-    width: 300px;
+    width: 600px;
     padding: 20px;
-    text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.certification-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
-
-.certification-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: left;
 }
 
 .certification-card a {
@@ -58,17 +46,35 @@ h1 {
     color: inherit;
 }
 
-.certification-card h2 {
-    margin-bottom: 10px;
-    font-size: 24px;
+.cert-content {
+    display: flex;
+    align-items: center;
+}
+
+.cert-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.cert-info h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
     color: #2980b9;
 }
 
-.certification-card p {
+.cert-info p {
     font-size: 16px;
     color: #7f8c8d;
 }
 
-.certification-card a:hover h2 {
+.certification-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.certification-card:hover h2 {
     color: #3498db;
 }
